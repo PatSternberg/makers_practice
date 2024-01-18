@@ -2,7 +2,8 @@ class candidate():
     def __init__(self, firstName, surname, languages):
         self.firstName = firstName
         self.surname = surname
-        self.languages = languages    
+        self.languages = languages
+        print(f'Hello, {self.firstName}!')    
 
 candidate1 = candidate('Vivec', 'Ald', 'C')
 candidate2 = candidate('Balmora', 'Sil', 'Python')
