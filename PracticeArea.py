@@ -1,10 +1,8 @@
 def unique_elements(l):
-    uniqueList = l
-    uniqueList.sort()
-    for i in uniqueList:
-        compare_dex = uniqueList.index(i)
-        if (compare_dex != -1) and (uniqueList[compare_dex] == uniqueList[compare_dex + 1]):
-            del uniqueList[compare_dex]
-    print(uniqueList)
+    newList = []
+    for i in l:
+        if i not in newList:
+            newList.append(i)
+    print(newList)
 
-unique_elements(['1', '2', '2', '3'])
+unique_elements(['1', '1', '2', '3', '4', '3'])
